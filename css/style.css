@@ -1,0 +1,260 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); 
+  }
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
+}
+  
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2'); 
+}
+  
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/montserrat-v26-latin-800.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/montserrat-v26-latin-900.woff2') format('woff2');
+}
+
+:root {
+    --btext-color: #121214;
+    --wtext-color: #ffffff;
+    --stext-color: #037E8C;
+    --gtext-color: #787878;
+    --bmain-color: #121214;
+    --wmain-color: #ffffff;
+    --smain-color: #037E8C;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
+}
+
+.first-section-pic {
+ background-image: url('first-section.jpg');
+ position: absolute;
+}
+
+
+.first-section-fill {
+  background-color: var(--gtext-color)
+}
+
+.butt-podmarsh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19.2rem;
+  height: 2.4rem;
+  background-color: var(--smain-color);
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 1.05rem 1.4rem;
+  
+}
+
+.butt-podmarsh-2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22rem;
+  height: 4.5rem;
+}
+
+.warrow {
+  background-image: url("/css/strelka.svg");
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.b-w14600 {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--wtext-color);
+  text-decoration: none;
+  padding-right: 1.3rem;
+}
+
+.w14400 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--wtext-color);
+}
+
+.w14600 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--wtext-color);
+}
+
+.w16500 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--wtext-color);
+}
+
+.w18300 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--wtext-color);
+}
+
+.w18700 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--wtext-color);
+}
+
+.w24700 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--wtext-color);
+}
+
+.w36700 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--wtext-color);
+}
+
+.b13400 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--btext-color);
+}
+
+.b14400 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--btext-color);
+}
+
+.b14600  {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--btext-color);
+}
+
+.b16400 {
+  font-size: 1.6rem;
+  font-weight: 400; 
+  color: var(--btext-color);
+}
+
+.b16600 {
+  font-size: 1.6rem;
+  font-weight: 600; 
+  color: var(--btext-color);
+}
+
+.b18300 {
+  font-size: 1.8rem;
+  font-weight: 300; 
+  color: var(--btext-color);
+}
+
+.b18600 {
+  font-size: 1.8rem;
+  font-weight: 600; 
+  color: var(--btext-color);
+}
+
+.b18700 {
+  font-size: 1.8rem;
+  font-weight: 700; 
+  color: var(--btext-color);
+}
+
+.b20600 {
+  font-size: 2rem;
+  font-weight: 600; 
+  color: var(--btext-color);
+}
+
+.b20700 {
+  font-size: 2rem;
+  font-weight: 700; 
+  color: var(--btext-color);
+}
+
+.b24600 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--btext-color);
+}
+
+.b24700 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--btext-color);
+}
+
+.b30900 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--btext-color);
+}
+
+.s14600 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--stext-color);
+}
+
+.s16500 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--stext-color);
+}
+
+.s18700 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--stext-color);
+}
+
+.s24800 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--stext-color);
+}
+
+.g12400 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--gtext-color);
+}
