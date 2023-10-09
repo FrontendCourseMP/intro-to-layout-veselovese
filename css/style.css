@@ -72,7 +72,7 @@ body {
   background-color: var(--gtext-color)
 }
 
-.butt-podmarsh {
+.butt-first-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,20 +81,11 @@ body {
   background-color: var(--smain-color);
   border-radius: 9px;
   cursor: pointer;
-  padding: 1.05rem 1.4rem;
-  
-}
-
-.butt-podmarsh-2 {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 22rem;
-  height: 4.5rem;
+  padding: 1.05rem 1.4rem; 
 }
 
 .warrow {
-  background-image: url("/css/strelka.svg");
+  background-image: url("/pictures/strelka.svg");
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
