@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-display: swap;
     font-family: 'Montserrat';
@@ -54,6 +58,7 @@
     --bmain-color: #121214;
     --wmain-color: #ffffff;
     --smain-color: #037E8C;
+    --gmain-color: #1F4D53;
     font-size: 62.5%;
 }
 
@@ -62,42 +67,150 @@ body {
     font-size: 1.6rem;
 }
 
-.first-section-pic {
- background-image: url('first-section.jpg');
- position: absolute;
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--wtext-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 16.2rem 0 0.8rem;
 }
 
+.pic-first-section {
+  background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%),
+   url("../pictures/pic-first-section.jpg");
 
-.first-section-fill {
-  background-color: var(--gtext-color)
 }
 
-.butt-first-section {
+.fs-t-1 {
+  padding: 0 3.3rem;
+}
+
+.fs-t-2 {
+  padding: 0.8rem 0 2.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--wtext-color);
+}
+
+.fs-t-3{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 19.2rem;
-  height: 2.4rem;
+  height: 2.3rem;
+  width: 19.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--wtext-color);
+}
+.fs-t-4 {
+  padding: 5rem 0 7.7rem 3rem;
+}
+
+.butt-first-section-1 {
+  display: flex;
+  width: 22rem;
+  height: 4.5rem;
   background-color: var(--smain-color);
   border-radius: 9px;
   cursor: pointer;
-  padding: 1.05rem 1.4rem; 
+}
+
+.butt-first-section-2 {
+  padding: 2.1rem 0 5rem;
 }
 
 .warrow {
-  background-image: url("/pictures/strelka.svg");
+  background-image: url("../pictures/strelka.svg");
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
+  padding: 2.4;
+  margin: 1.05rem 1.2rem 1.05rem 0.7rem;
 }
 
-.b-w14600 {
-  display: inline-block;
+.butt-point-1 {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--wmain-color);
+  padding: 0.4rem;
+  margin: 0.75rem 0.75rem 0.75rem 0;
+}
+
+.butt-point-2 {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--wmain-color);
+  padding: 0.4rem;
+  margin: 0.75rem;
+}
+
+.butt-point-3 {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--wmain-color);
+  padding: 0.4rem;
+  margin: 0.75rem 1.85rem 0.75rem 0.75rem;
+}
+
+.butt-point-1:focus {
+  background-color: var(--smain-color);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.75rem 0.75rem 0.75rem 0;
+}
+
+.butt-point-2:focus {
+  background-color: var(--smain-color);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.75rem;
+}
+
+.butt-point-3:focus {
+  background-color: var(--smain-color);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.75rem 1.85rem 0.75rem 0.75rem;
+}
+
+
+.white-line {
+  margin: 1.1rem 0.7rem 1.1rem 1.85rem;
+}
+
+.background-vector {
+  background-image: url("../pictures/background-vector.svg");
+}
+
+.alternative-vector {
+  background-color: var(--gtext-color)
+}
+
+.alternative-vector-2 {
+  background-color: var(--wtext-color);
+}
+
+.butt-w14600 {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--wtext-color);
   text-decoration: none;
-  padding-right: 1.3rem;
+  padding: 1.5rem 0.7rem 1.5rem 1.6rem;
 }
 
 .w14400 {
@@ -134,12 +247,6 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--wtext-color);
-}
-
-.w36700 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    color: var(--wtext-color);
 }
 
 .b13400 {
