@@ -131,8 +131,6 @@ h2 {
 
 .first-1 {
   padding: 9.8rem 3.3rem 0 3.3rem;
-  max-width: 85rem;
-  margin: 0 auto;
 }
 
 .first-2 {
@@ -188,8 +186,6 @@ h2 {
 
 .second-section {
   padding: 5.6rem 1rem 4.4rem;
-  max-width: 85rem;
-  margin: 0 auto;
 }
 
 .second-ul {
@@ -226,8 +222,6 @@ h2 {
 
 .third-section {
   padding: 3.5rem 1rem 4.7rem;
-  max-width: 85rem;
-  margin: 0 auto;
 }
 
 .third-section-back {
@@ -328,6 +322,10 @@ h2 {
 
 .third-li-8 {
   padding: 5.3rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  overflow: hidden;
 }
 
 .third-li-8-1 {
@@ -344,6 +342,7 @@ h2 {
   border-radius: 0.9rem;
   object-fit: cover;
   object-position: center;
+  
 }
 
 .third-li-9 {
@@ -372,8 +371,6 @@ h2 {
 
 .fourth-section {
   padding: 4.5rem 2.1rem 5rem;
-  margin: 0 auto;
-  max-width: 85rem;
 }
 
 .fourth-1 {
@@ -411,8 +408,6 @@ h2 {
 
 .fifth-section {
   padding: 9.5rem 1rem 4.8rem;
-  max-width: 85rem;
-  margin: 0 auto;
 }
 
 .fifth-ul {
@@ -426,12 +421,35 @@ h2 {
 
 .fifth-li {
   list-style-type: none;
+  background-color: #696969;
+  border-radius: 0.9rem;
+}
+
+.fifth-li-1 {
+  border-radius: 0.9rem 0.9rem 0 0;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.fifth-li-2 {
+  font-size: 1.8rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: var(--stext-color);
+  padding: 0.3rem 0 0 0.5rem;
+  margin: 0;
+}
+
+.fifth-li-3 {
+  line-height: 130%; 
+  padding: 0 0 0.9rem 0.5rem;
+  margin: 0;
 }
 
 .sixth-section {
   padding: 3.4rem 1rem 4.2rem;
-  margin: 0 auto;
-  max-width: 85rem;
 }
 
 .sixth-section-back {
@@ -443,26 +461,48 @@ h2 {
 }
 
 .sixth-ul {
-  padding: 0;
+  padding: 1.7rem 0 0;
   margin: 0;
 }
 
 .sixth-li {
   list-style-type: none;
   display: flex;
+  border-radius: 0.9rem;
+  background-color: var(--wmain-color);
+  margin: 0.7rem 0;
+}
+
+.sixth-li-1 {
+  margin: 0.5rem 1rem auto 0.5rem;
+  min-width: 2.7rem;
+  min-height: 2.7rem;
+}
+
+.sixth-li-2 {
+  margin: 0.7rem 0;
+  line-height: 120%;
+}
+
+.sixth-li-2-1 {
+  font-weight: 600;
+}
+
+.seventh-1 {
+  border-radius: 0.9rem;
+  background-color: var(--mmain-color);
+}
+
+.seventh-1-1 {
+  border-radius: 0.9rem;
 }
 
 .seventh-section {
   padding: 2.5rem 1rem 6rem;
-  margin: 0 auto;
-  max-width: 85rem;
-
 }
 
 .eighth-section {
   padding: 3.6rem 1rem 4.6rem;
-  margin: 0 auto;
-  max-width: 85rem;
 }
 
 .eighth-section-back {
@@ -475,14 +515,10 @@ h2 {
 
 .ninth-section {
   padding: 3rem 1rem 0;
-  margin: 0 auto;
-  max-width: 85rem;
 }
 
 .tenth-section {
   padding: 0.95rem 0 0;
-  margin: 0 auto;
-  max-width: 85rem;
 }
 
 .tenth-1 {
@@ -500,8 +536,6 @@ h2 {
 
 .eleventh-section {
   padding: 1.1rem 1rem 0;
-  margin: 0 auto;
-  max-width: 85rem;
 }
 
 .background-vector {
