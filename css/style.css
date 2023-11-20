@@ -70,6 +70,10 @@
   margin: 0 auto;
 }
 
+header {
+  position: absolute;
+}
+
 body {
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
@@ -121,7 +125,6 @@ h2 {
 }
 
 .zero {
-  background: transparent;
   display: flex;
   justify-content: space-between;
 }
@@ -135,7 +138,7 @@ h2 {
 }
 
 .first-1 {
-  padding: 9.8rem 3.3rem 0 3.3rem;
+  padding: 16.2rem 3.3rem 0 3.3rem;
 }
 
 .first-2 {
@@ -155,6 +158,9 @@ h2 {
   min-width: 5rem;
   min-height: 6.4rem;
   padding: 0.9rem 0 0 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .first-butt {
@@ -175,6 +181,9 @@ h2 {
  border: none;
  padding: 2.1rem 1.8rem;
  background-color: transparent;
+ position: absolute;
+ top: 0;
+ right: 0;
 }
 
 .first-butt-pic {
@@ -198,14 +207,10 @@ h2 {
 .second-ul {
   padding: 0;
   margin: 0;
-  display: flex; 
-  width: 100%;
-  min-width: 34rem;
-  flex-wrap: wrap;
-  line-height: 120%;
-  gap: 1.1rem;
-  justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.2rem;
+  justify-items: center;
 }
 
 .second-li {
@@ -312,6 +317,12 @@ h2 {
   border: 1.5px solid var(--smain-color);
   border-radius: 0.9rem;
   text-decoration: none;
+}
+
+.third-li-67 {
+  display: flex;
+  gap: 0.8rem;
+  text-align: center;
 }
 
 .third-li-7 {
@@ -421,9 +432,9 @@ h2 {
 .fifth-ul {
   margin: 0;
   padding: 2rem 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem 2rem;
 }
 
@@ -431,6 +442,7 @@ h2 {
   list-style-type: none;
   background-color: var(--mmain-color);
   border-radius: 0.9rem;
+  max-width: 16rem;
 }
 
 .fifth-li-1 {
@@ -479,6 +491,7 @@ h2 {
   border-radius: 0.9rem;
   background-color: var(--wmain-color);
   margin: 0.7rem 0;
+  min-height: 3.7rem;
 }
 
 .sixth-li-1 {
@@ -510,17 +523,15 @@ h2 {
 .seventh-1 {
   background-image: url(../pictures/seventh-1.svg);
   border-radius: 0.9rem;
-  min-width: 33.5rem;
-  min-height: 34.4rem;
   margin: 2.7rem 0 0;
+  justify-self: left;
 }
 
 .seventh-2 {
   background-image: url(../pictures/seventh-2.svg);
   border-radius: 0.9rem;
-  min-width: 33.5rem;
-  min-height: 34.4rem;
   margin: 2.7rem 0 0;
+  justify-self: right;
 }
 
 .seventh-2-1 {
@@ -533,7 +544,7 @@ h2 {
 
 .seventh-1-1 {
   border-radius: 0.9rem;
-  min-width: 33.5rem;
+  width: 100%;
 }
 
 .seventh-1-2 {
@@ -688,7 +699,6 @@ h2 {
   padding: 0;
   border: 0.5px solid var(--lgmain-color);
   border-radius: 0.2rem;
-  min-width: 34rem;
   min-height: 5.5rem;
 }
 
@@ -761,6 +771,10 @@ h2 {
 .tenth-1 {
   padding: 0 1rem 1.7rem;
   text-align: left;
+}
+
+.tenth-1-pic {
+  max-width: 100%;
 }
 
 .tenth-ul {
@@ -869,4 +883,32 @@ h2 {
 .eleventh-1-1 {
   width: 5.4rem;
   height: 6.9rem;
+}
+
+@media screen and (max-width: 359px) {
+ .second-ul {
+    grid-template-columns: 1fr;
+ }
+
+ .fifth-ul {
+  grid-template-columns: 1fr;
+ }
+
+ .third-li-67 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 710px) and (min-width: 360px){
+  .second-ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fifth-ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .seventh-0 {
+    justify-content: center;
+  }
 }
