@@ -72,6 +72,7 @@
 
 header {
   position: absolute;
+  width: 100%;
 }
 
 body {
@@ -140,15 +141,13 @@ ul {
 .zero {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
 }
 
 .zero-logo {
   min-width: 5rem;
   min-height: 6.4rem;
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
+  padding: 0.9rem 0 0 2rem;
 }
 
 .zero-butt-burger {
@@ -156,9 +155,20 @@ ul {
   min-height: 2rem;
   border: none;
   background-color: transparent;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
+  border-radius: 0;
+  display: block;
+  padding: 0;
+  padding-right: 2rem;
+ }
+
+ .zero-butt-burger:focus {
+  min-width: 0.8rem;
+  min-height: 0.8rem;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  padding-right: 2rem;
+  background-color: transparent;
  }
 
 .first-section {
@@ -555,7 +565,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1.4rem 2.9rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .seventh-1 {
@@ -887,6 +897,10 @@ ul {
 
 .eleventh-section {
   margin-bottom: 1.5rem;
+}
+
+.eleventh-0 {
+  display: none;
 }
 
 .eleventh-ul {
