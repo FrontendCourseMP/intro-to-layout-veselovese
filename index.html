@@ -12,8 +12,17 @@
 <body>
     <header>
         <div class="zero wrapper">
-            <a href="#" class="zero-logo"><img src="../pictures/logotype-cfmoto.png"
+            <a href="#" class="zero-logo"><img class="zero-logo-pic" src="../pictures/logotype-cfmoto.png"
                     alt="Логотип CFMOTO EXPERIENCE Kuban"></a>
+            <nav class="zero-nav">
+                <ul class="zero-ul">
+                    <li class="zero-li"><a class="zero-li-link" href="#">Маршруты</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Галерея</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Вопрос-ответ</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Контакты</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Забронировать</a></li>
+                </ul>
+            </nav>
             <button type="button" class="zero-butt-burger"><img src="../pictures/first-burger-menu.svg"
                     alt="Меню типа 'бургер' белого цвета"></button>
         </div>
@@ -21,10 +30,15 @@
     <main>
         <section class="first-section">
             <div class="first-1 wrapper">
-                <h1>Экскурсии на квадроциклах в Геленджике</h1>
-                <p class="first-2">приезжайте за новыми ощущениями и эмоциями!</p>
-                <a href="#" class="first-butt">Подобрать маршрут<img class="first-butt-pic" src="../pictures/strelka.svg"
-                        alt="стрелка на белом фоне"></a>
+                <div>
+                    <h1><span class="first-h1">Экскурсии на</span>
+                        <span class="first-h1">квадроциклах</span>
+                        <span class="first-h1">в Геленджике</span>
+                    </h1>
+                    <p class="first-2">приезжайте за новыми ощущениями и эмоциями!</p>
+                    <a href="#" class="first-butt">Подобрать маршрут<img class="first-butt-pic"
+                            src="../pictures/strelka.svg" alt="стрелка на белом фоне"></a>
+                </div>
                 <div class="first-3">
                     <button type="button" class="first-3-1"></button>
                     <button type="button" class="first-3-2"></button>
@@ -68,111 +82,129 @@
                 <h2>Наши маршруты</h2>
                 <ul class="third-ul">
                     <li class="third-li">
-                        <h3 class="third-li-1">Базовый<img src="../pictures/third-line.svg" alt="Бирюзовые линия"></h3>
-                        <p class="third-li-2">от 4000 ₽</p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-time.svg"
-                                alt="Бирюзовая иконка часов">Время в пути:<span class="third-li-3-span">1,5 - 2
-                                часа</span></p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-point.svg"
-                                alt="Бирюзовая иконка локации">Расстояние: <span class="third-li-3-span">20 - 25
-                                км</span></p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-star.svg"
-                                alt="Бирюзовая иконка звезды">Сложность: <span class="third-li-3-span">5***</span></p>
-                        <p class="third-li-4">Маршрут<img class="third-li-4-pic" src="../pictures/third-way.svg"
-                                alt="Черная иконка маршрута"></p>
-                        <p class="third-li-5">Смотровая - Родник - Камень Джигита - Адербиевка -
-                            Гора Нексис - Грозовые Ворота - Шашлыки - Цыгельский водопад
-                            (чаша любви) - Форсаж</p>
-                        <div class="third-li-6">
-                            <a href="#" class="third-li-6-1">Подробнее</a>
-                            <a href="#" class="third-li-6-2">Забронировать</a>
+                        <div>
+                            <h3 class="third-li-1">Базовый<div class="third-li-pic"></div>
+                            </h3>
+                            <p class="third-li-2">от 4000 ₽</p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-time.svg"
+                                    alt="Бирюзовая иконка часов">Время в пути:<span class="third-li-3-span">1,5 - 2
+                                    часа</span></p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-point.svg"
+                                    alt="Бирюзовая иконка локации">Расстояние: <span class="third-li-3-span">20 - 25
+                                    км</span></p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-star.svg"
+                                    alt="Бирюзовая иконка звезды">Сложность: <span class="third-li-3-span">5***</span>
+                            </p>
+                            <p class="third-li-4">Маршрут<img class="third-li-4-pic" src="../pictures/third-way.svg"
+                                    alt="Черная иконка маршрута"></p>
+                            <p class="third-li-5">Смотровая - Родник - Камень Джигита - Адербиевка -
+                                Гора Нексис - Грозовые Ворота - Шашлыки - Цыгельский водопад
+                                (чаша любви) - Форсаж</p>
+                            <div class="third-li-6">
+                                <a href="#" class="third-li-6-1">Подробнее</a>
+                                <a href="#" class="third-li-6-2">Забронировать</a>
+                            </div>
                         </div>
-                        <div class="third-li-7">
-                            <img class="third-li-7-1" src="../pictures/third-quatro-1.jpg"
-                                alt="Квадроцикл едет по полю">
-                            <img class="third-li-7-2" src="../pictures/third-quatro-2.jpg"
-                                alt="Квадроцикл едет по бездорожью">
-                            <img class="third-li-7-2" src="../pictures/third-quatro-3.jpg"
-                                alt="Квадроцикл едет по бездорожью">
-                        </div>
-                        <div class="third-li-8">
-                            <button class="third-li-8-1" type="button"></button>
-                            <button class="third-li-8-1" type="button"></button>
-                            <button class="third-li-8-1" type="button"></button>
-                            <div class="third-li-8-2"></div>
-                            <p>scroll</p>
+                        <div class="third-li-7-0">
+                            <div class="third-li-7">
+                                <img class="third-li-7-1" src="../pictures/third-quatro-1.jpg"
+                                    alt="Квадроцикл едет по полю">
+                                <img class="third-li-7-2" src="../pictures/third-quatro-2.jpg"
+                                    alt="Квадроцикл едет по бездорожью">
+                                <img class="third-li-7-2" src="../pictures/third-quatro-3.jpg"
+                                    alt="Квадроцикл едет по бездорожью">
+                            </div>
+                            <div class="third-li-8">
+                                <button class="third-li-8-1" type="button"></button>
+                                <button class="third-li-8-1" type="button"></button>
+                                <button class="third-li-8-1" type="button"></button>
+                                <div class="third-li-8-2"></div>
+                                <p>scroll</p>
+                            </div>
                         </div>
                     </li>
-                    <li class="third-li">
-                        <h3 class="third-li-1">Расширенный<img src="../pictures/third-line.svg" alt="Бирюзовые линия">
-                        </h3>
-                        <p class="third-li-2">от 16000 ₽</p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-time.svg"
-                                alt="Бирюзовая иконка часов">Время в пути:<span class="third-li-3-span">6 - 8
-                                часов</span></p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-point.svg"
-                                alt="Бирюзовая иконка локации">Расстояние: <span class="third-li-3-span">60 - 70
-                                км</span></p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-star.svg"
-                                alt="Бирюзовая иконка звезды">Сложность: <span class="third-li-3-span">5***</span></p>
-                        <p class="third-li-4">Маршрут<img class="third-li-4-pic" src="../pictures/third-way.svg"
-                                alt="Черная иконка маршрута"></p>
-                        <p class="third-li-5">Форсаж - Голубая бухта - Заброшенная Тур База -
-                            Сухогруз Рио - Форсаж</p>
-                        <div class="third-li-6">
-                            <a href="#" class="third-li-6-1">Подробнее</a>
-                            <a href="#" class="third-li-6-2">Забронировать</a>
+                    <li class="third-li" id="third-li-desktop">
+                        <div>
+                            <h3 class="third-li-1">Расширенный<div class="third-li-pic"></div>
+                            </h3>
+                            <p class="third-li-2">от 16000 ₽</p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-time.svg"
+                                    alt="Бирюзовая иконка часов">Время в пути:<span class="third-li-3-span">6 - 8
+                                    часов</span></p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-point.svg"
+                                    alt="Бирюзовая иконка локации">Расстояние: <span class="third-li-3-span">60 - 70
+                                    км</span></p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-star.svg"
+                                    alt="Бирюзовая иконка звезды">Сложность: <span class="third-li-3-span">5***</span>
+                            </p>
+                            <p class="third-li-4">Маршрут<img class="third-li-4-pic" src="../pictures/third-way.svg"
+                                    alt="Черная иконка маршрута"></p>
+                            <p class="third-li-5">Форсаж - Голубая бухта - Заброшенная Тур База -
+                                Сухогруз Рио - Форсаж</p>
+                            <div class="third-li-6">
+                                <a href="#" class="third-li-6-1">Подробнее</a>
+                                <a href="#" class="third-li-6-2">Забронировать</a>
+                            </div>
                         </div>
-                        <div class="third-li-7">
-                            <img class="third-li-7-1" src="../pictures/third-quatro-4.jpg"
-                                alt="Квадроцикл едет по реке">
-                            <img class="third-li-7-2" src="../pictures/third-quatro-5.jpg"
-                                alt="Человек рядом с квадроциклом">
-                            <img class="third-li-7-2" src="../pictures/third-quatro-6.jpg"
-                                alt="Квадроцикл едет по реке">
-                        </div>
-                        <div class="third-li-8">
-                            <button class="third-li-8-1" type="button" style="margin-left: 0;"></button>
-                            <button class="third-li-8-1" type="button"></button>
-                            <button class="third-li-8-1" type="button"></button>
-                            <img class="third-li-8-2" src="../pictures/third-line-2.svg" alt="">
-                            <p>scroll</p>
+                        <div class="third-li-7-0">
+                            <div class="third-li-7">
+                                <img class="third-li-7-1" src="../pictures/third-quatro-4.jpg"
+                                    alt="Квадроцикл едет по реке">
+                                <img class="third-li-7-2" src="../pictures/third-quatro-5.jpg"
+                                    alt="Человек рядом с квадроциклом">
+                                <img class="third-li-7-2" src="../pictures/third-quatro-6.jpg"
+                                    alt="Квадроцикл едет по реке">
+                            </div>
+                            <div class="third-li-8">
+                                <button class="third-li-8-1" type="button" style="margin-left: 0;"></button>
+                                <button class="third-li-8-1" type="button"></button>
+                                <button class="third-li-8-1" type="button"></button>
+                                <img class="third-li-8-2" src="../pictures/third-line-2.svg" alt="">
+                                <p>scroll</p>
+                            </div>
                         </div>
                     </li>
                     <li class="third-li" id="third-li-last">
-                        <h3 class="third-li-1">Experience<img src="../pictures/third-line.svg" alt="Бирюзовые линия"></h3>
-                        <p class="third-li-2">от 7000 ₽</p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-time.svg"
-                                alt="Бирюзовая иконка часов">Время в пути:<span class="third-li-3-span">4 часа</span>
-                        </p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-point.svg"
-                                alt="Бирюзовая иконка локации">Расстояние: <span class="third-li-3-span">40 - 50
-                                км</span></p>
-                        <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-star.svg"
-                                alt="Бирюзовая иконка звезды">Сложность: <span class="third-li-3-span">5***</span></p>
-                        <p class="third-li-4">Маршрут<img class="third-li-4-pic" src="../pictures/third-way.svg"
-                                alt="Черная иконка маршрута"></p>
-                        <p class="third-li-5">Смотровая - Родник - Камень Джигита - Адербиевка -
-                            Гора Нексис - Грозовые Ворота - Шашлыки - Цыгельский водопад
-                            (чаша любви) - Форсаж</p>
-                        <div class="third-li-6">
-                            <a href="#" class="third-li-6-1">Подробнее</a>
-                            <a href="#" class="third-li-6-2">Забронировать</a>
+                        <div>
+                            <h3 class="third-li-1">Experience<div class="third-li-pic"></div>
+                            </h3>
+                            <p class="third-li-2">от 7000 ₽</p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-time.svg"
+                                    alt="Бирюзовая иконка часов">Время в пути:<span class="third-li-3-span">4
+                                    часа</span>
+                            </p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-point.svg"
+                                    alt="Бирюзовая иконка локации">Расстояние: <span class="third-li-3-span">40 - 50
+                                    км</span></p>
+                            <p class="third-li-3"><img class="third-li-3-pic" src="../pictures/third-star.svg"
+                                    alt="Бирюзовая иконка звезды">Сложность: <span class="third-li-3-span">5***</span>
+                            </p>
+                            <p class="third-li-4">Маршрут<img class="third-li-4-pic" src="../pictures/third-way.svg"
+                                    alt="Черная иконка маршрута"></p>
+                            <p class="third-li-5">Смотровая - Родник - Камень Джигита - Адербиевка -
+                                Гора Нексис - Грозовые Ворота - Шашлыки - Цыгельский водопад
+                                (чаша любви) - Форсаж</p>
+                            <div class="third-li-6">
+                                <a href="#" class="third-li-6-1">Подробнее</a>
+                                <a href="#" class="third-li-6-2">Забронировать</a>
+                            </div>
                         </div>
-                        <div class="third-li-7">
-                            <img class="third-li-7-1" src="../pictures/third-quatro-7.jpg"
-                                alt="Квадроцикл едет по горе">
-                            <img class="third-li-7-2" src="../pictures/third-quatro-8.jpg"
-                                alt="Квадроцикл едет по горе с флагом">
-                            <img class="third-li-7-2" src="../pictures/third-quatro-9.jpg"
-                                alt="Квадроцикл едет по бездорожью">
-                        </div>
-                        <div class="third-li-8">
-                            <button class="third-li-8-1" type="button" style="margin-left: 0;"></button>
-                            <button class="third-li-8-1" type="button"></button>
-                            <button class="third-li-8-1" type="button"></button>
-                            <img class="third-li-8-2" src="../pictures/third-line-2.svg" alt="">
-                            <p>scroll</p>
+                        <div class="third-li-7-0">
+                            <div class="third-li-7">
+                                <img class="third-li-7-1" src="../pictures/third-quatro-7.jpg"
+                                    alt="Квадроцикл едет по горе">
+                                <img class="third-li-7-2" src="../pictures/third-quatro-8.jpg"
+                                    alt="Квадроцикл едет по горе с флагом">
+                                <img class="third-li-7-2" src="../pictures/third-quatro-9.jpg"
+                                    alt="Квадроцикл едет по бездорожью">
+                            </div>
+                            <div class="third-li-8">
+                                <button class="third-li-8-1" type="button" style="margin-left: 0;"></button>
+                                <button class="third-li-8-1" type="button"></button>
+                                <button class="third-li-8-1" type="button"></button>
+                                <img class="third-li-8-2" src="../pictures/third-line-2.svg" alt="">
+                                <p>scroll</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -272,16 +304,22 @@
                 <div class="seventh-0">
                     <div class="seventh-1">
                         <img class="seventh-1-1" src="../pictures/seventh-box.jpg" alt="Подарочная коробка с бантом">
-                        <p class="seventh-1-2">Скидка 10%</p>
-                        <p class="seventh-1-3">на день рождения</p>
-                        <p class="seventh-1-4">в честь дня рождения - дарим имениннеку скидку 10%</p>
+                        <div class="seventh-1-234">
+                            <p class="seventh-1-2">Скидка 10%</p>
+                            <p class="seventh-1-3">на день рождения</p>
+                            <p class="seventh-1-4">в честь дня рождения - дарим имениннеку скидку 10%</p>
+                            <img src="../pictures/seventh-12.svg" alt="" class="seventh-1-5">
+                        </div>
                     </div>
                     <div class="seventh-2">
                         <img class="seventh-1-1" src="../pictures/seventh-village.jpg"
                             alt="Загородный клуб с деревянными домами и фонтаном">
-                        <p class="seventh-1-2">Скидка 10%</p>
-                        <p class="seventh-2-1">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
-                        <a href="#" class="seventh-2-2">Подробнее</a>
+                        <div class="seventh-2-234">
+                            <p class="seventh-1-2">Скидка 10%</p>
+                            <p class="seventh-2-1">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
+                            <a href="#" class="seventh-2-2">Подробнее</a>
+                            <img src="../pictures/seventh-12.svg" alt="" class="seventh-1-5">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -310,60 +348,64 @@
         </section>
         <section>
             <div class="ninth-section wrapper">
-                <h2 class="ninth-0">Вопросы-ответы</h2>
-                <ul class="ninth-ul">
-                    <li class="ninth-li">
-                        <button type="button" class="ninth-li-butt">
-                            <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
-                                    src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
-                            <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown printer took
-                                a galley of type and scrambled it to make a type specimen book.
-                            </span>
-                        </button>
-                    </li>
-                    <li class="ninth-li">
-                        <button type="button" class="ninth-li-butt">
-                            <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
-                                    src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
-                            <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown printer took
-                                a galley of type and scrambled it to make a type specimen book.
-                            </span>
-                        </button>
-                    </li>
-                    <li class="ninth-li">
-                        <button type="button" class="ninth-li-butt">
-                            <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
-                                    src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
-                            <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown printer took
-                                a galley of type and scrambled it to make a type specimen book.
-                            </span>
-                        </button>
-                    </li>
-                    <li class="ninth-li">
-                        <button type="button" class="ninth-li-butt">
-                            <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
-                                    src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
-                            <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard
-                                dummy text ever since the 1500s, when an unknown printer took
-                                a galley of type and scrambled it to make a type specimen book.
-                            </span>
-                        </button>
-                    </li>
-                </ul>
-                <img class="ninth-1" src="../pictures/ninth-q.svg" alt="Черная иконка с сообщениями">
-                <p class="ninth-2" style="text-align: center;">Есть вопросы?</p>
-                <p class="ninth-3">Не стесняйтесь обращаться к нам,
-                    если у вас есть какие-либо вопросы,
-                    предложения или идеи для сотрудничества
-                </p>
-                <a href="#" class="ninth-4">Задать вопрос</a>
+                <h2 class="ninth-h2">Вопросы-ответы</h2>
+                <div class="ninth-0-1">
+                    <ul class="ninth-ul">
+                        <li class="ninth-li">
+                            <button type="button" class="ninth-li-butt">
+                                <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
+                                        src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
+                                <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took
+                                    a galley of type and scrambled it to make a type specimen book.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="ninth-li">
+                            <button type="button" class="ninth-li-butt">
+                                <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
+                                        src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
+                                <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took
+                                    a galley of type and scrambled it to make a type specimen book.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="ninth-li">
+                            <button type="button" class="ninth-li-butt">
+                                <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
+                                        src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
+                                <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took
+                                    a galley of type and scrambled it to make a type specimen book.
+                                </span>
+                            </button>
+                        </li>
+                        <li class="ninth-li">
+                            <button type="button" class="ninth-li-butt">
+                                <span class="ninth-li-1">Актуальный вопрос?<img class="ninth-li-1-pic"
+                                        src="../pictures/ninth-up.svg" alt="Бирюзовая стрелка"></span>
+                                <span class="ninth-li-2">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took
+                                    a galley of type and scrambled it to make a type specimen book.
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="ninth-0-2">
+                        <img class="ninth-1" src="../pictures/ninth-q.svg" alt="Черная иконка с сообщениями">
+                        <p class="ninth-2" style="text-align: center;">Есть вопросы?</p>
+                        <p class="ninth-3">Не стесняйтесь обращаться к нам,
+                            если у вас есть какие-либо вопросы,
+                            предложения или идеи для сотрудничества
+                        </p>
+                        <a href="#" class="ninth-4">Задать вопрос</a>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="ninth-point-five wrapper"></div>
@@ -377,12 +419,14 @@
                                 alt="Бирюзовый круг с белой иконкой дома">Город Геленджик</p>
                     </li>
                     <li class="tenth-li">
-                        <a class="tenth-li-2" href="mailto:experience@groupgrand.ru"><img class="tenth-li-1" src="../pictures/tenth-mail.svg"
-                            alt="Бирюзовый круг с белой иконкой письма">experience@groupgrand.ru</a>
+                        <a class="tenth-li-2" href="mailto:experience@groupgrand.ru"><img class="tenth-li-1"
+                                src="../pictures/tenth-mail.svg"
+                                alt="Бирюзовый круг с белой иконкой письма">experience@groupgrand.ru</a>
                     </li>
                     <li class="tenth-li">
-                        <a class="tenth-li-2" href="tel:+79284280062"> <img class="tenth-li-1" src="../pictures/tenth-call.svg"
-                            alt="Бирюзовый круг с белой иконкой телефона">+7 928 428-00-62</a>
+                        <a class="tenth-li-2" href="tel:+79284280062"> <img class="tenth-li-1"
+                                src="../pictures/tenth-call.svg" alt="Бирюзовый круг с белой иконкой телефона">+7 928
+                            428-00-62</a>
                     </li>
                     <li class="tenth-li-last">
                         <img class="tenth-li-1" src="../pictures/tenth-time.svg"
@@ -433,6 +477,9 @@
                         </li>
                         <li class="eleventh-li">
                             <a href="../grid.html" class="eleventh-li-3">GRIDpage</a>
+                        </li>
+                        <li class="eleventh-li">
+                            <a href="../form.html" class="eleventh-li-3">FORMpage</a>
                         </li>
                     </ul>
                 </nav>

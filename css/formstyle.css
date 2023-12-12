@@ -1,0 +1,173 @@
+:root {
+    background-color: var(--mmain-color);
+    height: 100%;
+    --btext-color: #121214;
+    --wtext-color: #ffffff;
+    --stext-color: #037E8C;
+    --gtext-color: #787878;
+    --bmain-color: #121214;
+    --wmain-color: #ffffff;
+    --smain-color: #037E8C;
+    --gmain-color: #1F4D53;
+    --mmain-color: #f4f4f4;
+    --dgmain-color: #373737;
+    --lgmain-color: #848484;
+    font-size: 62.5%;
+}
+
+header {
+    position: static;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+fieldset {
+    border: 0.2rem solid var(--smain-color);
+    border-radius: 0.9rem;
+}
+
+legend {
+    font-weight: 600;
+}
+
+input {
+    background-color: var(--mmain-color);
+    border-radius: 0.9rem;
+    border: 0.2rem solid var(--smain-color);
+    min-height: 4rem;
+    width: 100%;
+    transition: 0.5s;
+}
+
+input:hover {
+    border-radius: 0;
+    border: 0.2rem solid var(--bmain-color);
+    background-color: var(--wmain-color);
+}
+
+.fs-1-1 input{
+    min-height: auto;
+    width: auto;
+}
+
+.fs-2-1 input{
+    min-height: auto;
+    width: auto;
+}
+
+.fs-0 legend {
+    font-size: 2.4rem;
+}
+
+.fs-1 legend {
+    font-size: 1.6rem;
+}
+
+.fs-2 legend {
+    font-size: 1.6rem;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    min-width: 15rem;
+    min-height: 5rem;
+    border-radius: 0.9rem;
+    background-color: var(--smain-color);
+    color: var(--wtext-color);
+    transition: 1s;
+}
+
+button:hover {
+    border-radius: 0;
+    background-color: var(--wmain-color);
+    color: var(--btext-color);
+    border: 0.2rem solid var(--bmain-color);
+}
+
+button:focus {
+    border-radius: 0.9rem;
+    color: var(--wtext-color);
+    background-color: var(--smain-color);
+    min-width: 15rem;
+    min-height: 5rem;
+}
+
+button:active {
+    min-width: 15rem;
+    min-height: 5rem;
+    background-color: var(--lgmain-color);
+}
+
+.fs-0 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem 5rem;
+    padding: 3rem;
+    margin: 5rem 3rem;
+}
+
+.fs-1 {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.fs-2 {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.fs-1-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fs-2-1 {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+.buttons {
+    grid-column: 2;
+    justify-self: right;
+}
+
+.sex-check {
+    display: none;
+}
+
+.sex {
+    cursor: pointer;
+    color: var(--gtext-color);  
+    transition: 0.5s; 
+}
+
+.sex-check:checked + .sex {
+    color: var(--btext-color);
+    font-weight: 700;
+}
+
+.day-part-check {
+    display: none;
+}
+
+.day-part {
+    cursor: pointer;
+    color: var(--gtext-color);
+    transition: 0.5s;
+}
+
+.day-part-check:checked + .day-part {
+    color: var(--btext-color);
+    font-weight: 700;
+}
+

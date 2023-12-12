@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>FORM CSS</title>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/formstyle.css'>
+</head>
+
+<body>
+    <header>
+        <div class='zero wrapper'>
+            <a href='/index.html' class='zero-logo'><img src='../pictures/logotype-cfmoto.png'
+                    alt='Логотип CFMOTO EXPERIENCE Kuban'></a>
+            <button type='button' class='zero-butt-burger'><img src='../pictures/first-burger-menu.svg'
+                    alt='Меню типа бургер белого цвета'></button>
+        </div>
+    </header>
+    <main>
+        <section class='wrapper'>
+            <form action="//httpbin.org/post" method="post">
+                <fieldset class="fs-0">
+                    <legend>Зарегистрироваться</legend>
+                    <fieldset class="fs-1">
+                        <legend>Персональные данные</legend>
+                        <label>Имя (обязательное поле)<input type='text' name='user-name' placeholder='Матвей'
+                                required></label>
+                        <label>Дата рождения (обязательное поле) <input type='date' name='user-bdate' required></label>
+                        <fieldset class="fs-1-1">
+                            <legend>Пол </legend>
+                            <label><input class="sex-check" type='radio' name='user-sex' value='man' checked>
+                                <span class="sex">Мужской</span></label>
+                            <label><input class="sex-check" type='radio' name='user-sex' value='woman'><span
+                                    class="sex">Женский</span></label>
+                        </fieldset>
+                        <label>Пароль (обязательно поле) <input type='password' name='user-password'
+                                placeholder='V98Dio1*8!'></label>
+                    </fieldset>
+                    <fieldset class="fs-2">
+                        <legend>Контактная информация</legend>
+                        <label>Электронная почта (обязательное поле) <input type='email' name='user-email'
+                                placeholder='matvei@veseloff.su' required></label>
+                        <label>Телефон (обязательное поле) <input type='tel' name='user-tel' placeholder='89223478273'
+                                required></label>
+                        <fieldset class="fs-2-1">
+                            <legend>В какое время вам позвонить? </legend>
+                            <label><input class="day-part-check" type='checkbox' name='user-will-answer'
+                                    value='morning'><span class="day-part">Утром</span></label>
+                            <label><input class="day-part-check" type='checkbox' name='user-will-answer' value='day'
+                                    checked><span class="day-part">Днем</span></label>
+                            <label><input class="day-part-check" type='checkbox' name='user-will-answer' value='evening'
+                                    checked><span class="day-part">Вечером</span></label>
+                            <label><input class="day-part-check" type='checkbox' name='user-will-answer'
+                                    value='night'><span class="day-part">Ночью</span></label>
+                        </fieldset>
+                    </fieldset>
+                    <div class="buttons">
+                        <button type='reset'>Сбросить</button>
+                        <button type='submit'>Отправить</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <div class='tenth-point-five wrapper'></div>
+    <footer>
+        <div class='eleventh-section wrapper'>
+            <h2 class='eleventh-0'>Разделы сайта</h2>
+            <div class='eleventh-1'>
+                <a class='eleventh-1-1' href='#'><img src='../pictures/logotype-cfmoto.png'
+                        alt='Логотип CFMOTO EXPERIENCE Kuban'></a>
+                <nav>
+                    <ul class='eleventh-ul'>
+                        <li class='eleventh-li'>
+                            <a href='#' class='eleventh-li-1'>МАРШРУТЫ</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='#' class='eleventh-li-2'>ГЕЛЕРЕЯ</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='#' class='eleventh-li-2'>ВОПРОС-ОТВЕТ</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='#' class='eleventh-li-2'>КОНТАКТЫ</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='#' class='eleventh-li-2'>УСЛОВИЯ</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='#' class='eleventh-li-2'>СПЕЦПРЕДЛОЖЕНИЯ</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='../grid.html' class='eleventh-li-3'>GRIDpage</a>
+                        </li>
+                        <li class='eleventh-li'>
+                            <a href='../form.html' class='eleventh-li-3'>FORMpage</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class='eleventh-point-five wrapper'></div>
+        <p class='footer-1 wrapper'>© CFMOTO Experience Kuban. Внедорожный полигон
+            CFMOTO и прокат квадроциклов в Геленджике
+        </p>
+    </footer>
+</body>
+
+</html>
