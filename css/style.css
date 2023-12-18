@@ -63,6 +63,12 @@
   --dgmain-color: #373737;
   --lgmain-color: #848484;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--smain-color);
+  color: var(--wtext-color);
 }
 
 .wrapper {
@@ -98,6 +104,10 @@ button {
   padding: 0.4rem;
   background-color: var(--wmain-color);
   text-align: left;
+}
+
+button:hover {
+  background-color: var(--lgmain-color);
 }
 
 button:focus {
@@ -192,6 +202,11 @@ ul {
   text-decoration: none;
   color: var(--wtext-color);
   text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.zero-li-link:hover {
+  color: var(--stext-color);
 }
 
 .first-section {
@@ -259,6 +274,7 @@ ul {
   text-decoration: none;
   padding: 1.5rem 4rem 1.5rem 1.6rem;
   margin-bottom: 10rem;
+  transition: 0.5s;
 }
 
 .first-butt-pic {
@@ -268,6 +284,18 @@ ul {
   position: absolute;
   right: 1.1rem;
   top: 1rem;
+}
+
+.first-butt:hover {
+  background-color: var(--gmain-color)
+}
+
+.first-butt:active {
+  background-color: var(--dgmain-color);
+}
+
+.first-butt:focus {
+  background-color: var(--dgmain-color);
 }
 
 .second-section {
@@ -406,6 +434,12 @@ ul {
   border: 1.5px solid var(--smain-color);
   border-radius: 0.9rem;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.third-li-6-1:hover {
+  background-color: var(--smain-color);
+  color: var(--wtext-color);
 }
 
 .third-li-6-2 {
@@ -415,8 +449,15 @@ ul {
   min-width: 16.4rem;
   min-height: 4.1rem;
   border-radius: 0.9rem;
+  border: 1.5px solid var(--smain-color);
   background-color: var(--smain-color);
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.third-li-6-2:hover {
+  background-color: transparent;
+  color: var(--stext-color);
 }
 
 .third-li-7 {
