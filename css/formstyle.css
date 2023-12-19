@@ -237,3 +237,14 @@ button:active {
     font-size: 1.6rem;
 }
 
+.psevdcheck:checked + span {
+    text-decoration: line-through;
+}
+
+.psevd-1 label:nth-child(2n) {
+    font-weight: 600;
+}
+
+.psevd-2 label:nth-child(2n+1) {
+    color: var(--gmain-color);
+}

@@ -12,11 +12,20 @@
 
 <body>
     <header>
-        <div class='zero wrapper'>
-            <a href='/index.html' class='zero-logo'><img src='../pictures/logotype-cfmoto.png'
-                    alt='Логотип CFMOTO EXPERIENCE Kuban'></a>
-            <button type='button' class='zero-butt-burger'><img src='../pictures/first-burger-menu.svg'
-                    alt='Меню типа бургер белого цвета'></button>
+        <div class="zero wrapper">
+            <a href="/index.html" class="zero-logo"><img class="zero-logo-pic" src="../pictures/logotype-cfmoto.png"
+                    alt="Логотип CFMOTO EXPERIENCE Kuban"></a>
+            <nav class="zero-nav">
+                <ul class="zero-ul">
+                    <li class="zero-li"><a class="zero-li-link" href="#roads">Маршруты</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Галерея</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Вопрос-ответ</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Контакты</a></li>
+                    <li class="zero-li"><a class="zero-li-link" href="#">Забронировать</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="zero-butt-burger"><img src="../pictures/first-burger-menu.svg"
+                    alt="Меню типа 'бургер' белого цвета"></button>
         </div>
     </header>
     <main>
@@ -80,45 +89,71 @@
                         </dl>
                     </div>
                     <div class="psevd-list">
-                        <fieldset class="psevd">
+                        <fieldset class="psevd psevd-1">
                             <legend>Псевдоклассы </legend>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:active</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:is()</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:any-link, :link,
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>:active</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:is()</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''><span>:any-link,
+                                    :link,
                                     :visited</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:checked</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:default</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:dir()</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:disabled,
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>:checked</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:default</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:dir()</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''><span>:disabled,
                                     :enabled</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:focus и
-                                    :focus-within</span>:empty</label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:fullscreen</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:has()</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:hover</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:indeterminate</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:in-range и
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>:focus и
+                                    :focus-within</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>:empty</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:fullscreen</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:has()</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>:hover</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:indeterminate</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''><span>:in-range
+                                    и
                                     :out-of-range</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:lang()</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:not()</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:optional и
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:lang()</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:not()</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''><span>:optional
+                                    и
                                     :required</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:read-only и
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''><span>:read-only
+                                    и
                                     :read-write</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:root</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:target</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>:valid и
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>:root</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>:target</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''><span>:valid и
                                     :invalid</span></label>
                         </fieldset>
-                        <fieldset class="psevd">
+                        <fieldset class="psevd psevd-2">
                             <legend>Псевдоклассы </legend>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>::before и
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>::before и
                                     ::after</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>::first-letter</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>::first-line</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>::selection</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>::placeholder</span></label>
-                            <label><input type='checkbox' name='psevdclass' value=''><span>::marker</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>::first-letter</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>::first-line</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>::selection</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass' value=''
+                                    checked><span>::placeholder</span></label>
+                            <label><input class="psevdcheck" type='checkbox' name='psevdclass'
+                                    value=''><span>::marker</span></label>
                         </fieldset>
                     </div>
                 </fieldset>
@@ -157,6 +192,9 @@
                         </li>
                         <li class='eleventh-li'>
                             <a href='../form.html' class='eleventh-li-1'>FORMpage</a>
+                        </li>
+                        <li class="eleventh-li">
+                            <a href="../demo.html" class="eleventh-li-1">DEMOpage</a>
                         </li>
                     </ul>
                 </nav>
