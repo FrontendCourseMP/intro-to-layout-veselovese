@@ -104,6 +104,7 @@ button {
   padding: 0.4rem;
   background-color: var(--wmain-color);
   text-align: left;
+  transition: 0.5s;
 }
 
 button:hover {
@@ -141,6 +142,7 @@ p {
 
 a {
   margin: 0;
+  transition: 0.5s;
 }
 
 ul {
@@ -231,7 +233,6 @@ ul {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 130%;
-
 }
 
 .first-3 {
@@ -287,7 +288,8 @@ ul {
 }
 
 .first-butt:hover {
-  background-color: var(--gmain-color)
+  background-color: var(--gmain-color);
+  transform: translateX(2rem);
 }
 
 .first-butt:active {
@@ -442,6 +444,16 @@ ul {
   color: var(--wtext-color);
 }
 
+.third-li-6-1:active{
+  background-color: var(--dgmain-color);
+}
+
+.third-li-6-1:focus{
+  background-color: var(--dgmain-color);
+  color: var(--wtext-color);
+  border: 1.5px solid var(--dgmain-color);
+}
+
 .third-li-6-2 {
   display: block;
   padding: 1.2rem 2.3rem;
@@ -458,6 +470,16 @@ ul {
 .third-li-6-2:hover {
   background-color: transparent;
   color: var(--stext-color);
+}
+
+.third-li-6-2:active{
+  background-color: var(--dgmain-color);
+}
+
+.third-li-6-2:focus{
+  background-color: var(--dgmain-color);
+  color: var(--wtext-color);
+  border: 1.5px solid var(--dgmain-color);
 }
 
 .third-li-7 {
@@ -543,6 +565,19 @@ ul {
   background-color: var(--smain-color);
   text-decoration: none;
   margin: 0 auto;
+  transition: 0.5s;
+}
+
+.fourth-3:hover {
+  background: var(--gmain-color);
+}
+
+.fourth-3:active {
+  background-color: var(--dgmain-color);
+}
+
+.fourth-3:focus {
+  background-color: var(--dgmain-color);
 }
 
 .fourth-4 {
@@ -825,6 +860,22 @@ ul {
   border-radius: 0.9rem;
   text-decoration: none;
   text-align: center;
+  transition: 0.5s;
+}
+
+.eighth-4:hover {
+  background-color: var(--smain-color);
+  color: var(--wtext-color);
+}
+
+.eighth-4:active {
+  background-color: var(--dgmain-color);
+}
+
+.eighth-4:focus {
+  background-color: var(--dgmain-color);
+  border: 1.5px solid var(--dgmain-color);
+  color: var(--wtext-color);
 }
 
 .eighth-section-back {
@@ -879,11 +930,16 @@ ul {
   font-weight: 600;
 }
 
+.ninth-li-1-pic {
+  transition: 2s;
+}
+
 .ninth-li-2 {
   display: none;
   padding: 0.5rem 1.3rem 0.8rem;
   font-size: 1.3rem;
   line-height: 150%;
+  transition-delay: 1.5s;
 }
 
 .ninth-li-butt {
@@ -897,6 +953,7 @@ ul {
   width: 100%;
   max-width: 54rem;
   cursor: pointer;
+  transition: 2s;
 }
 
 .ninth-li-butt:focus {
@@ -936,14 +993,32 @@ ul {
 .ninth-4 {
   display: block;
   margin: 0 auto;
-  max-width: 17.5rem;
+  max-width: 17.7rem;
   padding: 1.3rem 3.3rem;
   font-weight: 600;
   line-height: 130%;
   color: var(--wtext-color);
   border-radius: 0.9rem;
+  border: 0.5px solid var(--smain-color);
   background-color: var(--smain-color);
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.ninth-4:hover {
+  background-color: transparent;
+  color: var(--stext-color);
+}
+
+.ninth-4:active {
+  background-color: var(--dgmain-color);
+  color: var(--wtext-color);
+  border: 0.5px solid var(--dgmain-color);
+}
+
+.ninth-4:focus {
+  background-color: var(--dgmain-color);
+  border: 0.5px solid var(--dgmain-color);
 }
 
 .ninth-point-five {
@@ -993,6 +1068,18 @@ ul {
   line-height: 130%;
   text-decoration: none;
   color: var(--btext-color);
+}
+
+.tenth-li a:hover {
+  color: var(--stext-color);
+}
+
+.tenth-li a:active {
+  color: var(--gmain-color);
+}
+
+.tenth-li a:focus {
+  color: var(--stext-color);
 }
 
 .tenth-li-3-1 {
@@ -1050,16 +1137,16 @@ ul {
   color: var(--btext-color);
 }
 
-.eleventh-li-2 {
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--btext-color);
+.eleventh-li-1:hover {
+  color: var(--stext-color);
 }
 
-.eleventh-li-3 {
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--btext-color);
+.eleventh-li-1:active {
+  color: var(--gmain-color);
+}
+
+.eleventh-li-1:focus {
+  color: var(--smain-color);
 }
 
 .eleventh-1 {

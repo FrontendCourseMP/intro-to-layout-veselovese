@@ -1,0 +1,111 @@
+:root {
+    background-color: var(--mmain-color);
+    height: 100%;
+    --btext-color: #121214;
+    --wtext-color: #ffffff;
+    --stext-color: #037E8C;
+    --gtext-color: #787878;
+    --bmain-color: #121214;
+    --wmain-color: #ffffff;
+    --smain-color: #037E8C;
+    --gmain-color: #1F4D53;
+    --mmain-color: #f4f4f4;
+    --dgmain-color: #373737;
+    --lgmain-color: #848484;
+    font-size: 62.5%;
+}
+
+header {
+    position: static;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.ani-pic {
+    position: relative;
+    transition: 2s;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+    width: 20rem;
+    height: 20rem;
+}
+
+.ani-pic img {
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    backface-visibility: hidden;
+}
+
+.ani-pic-1 {
+    transform: rotateY(180deg);
+}
+
+.ani-pic:hover {
+    transform: rotateY(180deg);
+}
+
+.inf-0 {
+    display: flex;
+    gap: 5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.inf-0::before, .inf-0::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    z-index: 2;
+}
+
+.inf {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    animation: 9s slide linear infinite;
+}
+
+.inf-1 {
+    max-width: 20rem;
+}
+
+.inf-2 {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--smain-color);
+    animation: 1s sq-rot ease-in-out infinite;
+}
+
+.inf-0:hover .inf {
+    animation-play-state: paused;
+}
+
+.inf-0:hover .inf-2 {
+    background-color: var(--dgmain-color);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes sq-rot {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: rotateZ(90deg);
+    }
+}
