@@ -59,7 +59,7 @@
   --wmain-color: #ffffff;
   --smain-color: #037E8C;
   --gmain-color: #1F4D53;
-  --mmain-color: #f4f4f4;
+  --mmain-color: #f8f8f8;
   --dgmain-color: #373737;
   --lgmain-color: #848484;
   font-size: 62.5%;
@@ -89,7 +89,7 @@ body {
 }
 
 footer {
-  color: var(--gtext-color);
+  color: var(--dgmain-color);
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 127%;
@@ -105,6 +105,7 @@ button {
   background-color: var(--wmain-color);
   text-align: left;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 button:hover {
@@ -148,6 +149,35 @@ a {
 ul {
   padding: 0;
   margin: 0;
+}
+
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  padding: 10px 15px;
+  color: var(--wtext-color);
+  background-color: var(--smain-color);
+  border-radius: 0.9rem;
+  transform: translateY(-100%);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: translateY(20%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .zero {
@@ -806,6 +836,13 @@ ul {
   border: 1.5px solid var(--smain-color);
   border-radius: 0.9rem;
   text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.seventh-2-2:hover {
+  background-color: var(--smain-color);
+  color: var(--wtext-color);
 }
 
 .eighth-section {
@@ -849,6 +886,7 @@ ul {
   position: absolute;
   top: 1.9rem;
   right: 3.2rem;
+  color: var(--wtext-color);
 }
 
 .eighth-2-345 {
@@ -1216,9 +1254,6 @@ ul {
   align-items: center;
 }
 
-.eleventh-1-1 {
-}
-
 .eleventh-point-five {
   background-color: var(--bmain-color);
   height: 0.05rem;
@@ -1364,6 +1399,25 @@ ul {
 
   .seventh-1-1{
     max-height: 31.1rem;
+  }
+
+  .seventh-1-234, .seventh-2-234 {
+    padding-left: 0;
+    margin-left: 5rem;
+    padding-top: 5rem;
+  }
+
+  .seventh-1-2 {
+    margin-top: 0;
+  }
+
+  .seventh-1-4 {
+    padding-bottom: 0;
+    margin-top: 1.5rem;
+  }
+
+  .seventh-2-1 {
+    margin: 1.5rem 0 5rem;
   }
 
   .eighth-section {
